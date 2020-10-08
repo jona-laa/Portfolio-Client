@@ -1,31 +1,59 @@
 /* callback form */
 #contact {
-      background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) ), url('../images/photo-1569396116180-210c182bedb8.jpeg') no-repeat center center/cover;
-      padding: $padding-section;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url('../images/photo-1569396116180-210c182bedb8.jpeg') no-repeat center
+      center/cover;
+  padding: $padding-section;
+
+  .contact-icons {
+    margin: auto;
+    text-align: center;
+    width: 300px;
+  }
 }
 
 .contact-form {
-  @include flex(column, wrap);
+  justify-content: space-between;
   margin: auto;
   max-width: 680px;
   padding: 20px 0;
   width: 100%;
-
-  div {
-    width: 48%;
+  @include flex(row, wrap);
+  @include maxWidth(600px) {
+    @include flex(column, wrap);
   }
 
-  input {
+  div {
+    width: 49%;
+    @include maxWidth(600px) {
+      width: 100%;
+    }
+  }
+
+  label {
+    display: none;
+  }
+
+  input,
+  textarea {
     border: #f5f5f5 1px solid;
     box-shadow: 0px 2px 3px lightgray;
     height: 40px;
-    margin: 2.5px 0;
-    padding: 4px;
+    font-family: 'Quicksand', 'sans-serif';
+    margin: 5px 0;
+    padding: 4px 10px;
     width: 100%;
 
     &:focus {
-      outline-color: lighten($darkblue, 80%)
+      outline-color: lighten($darkblue, 80%);
     }
+  }
+
+  textarea {
+    height: 150px;
   }
 
   .btn {

@@ -14,23 +14,28 @@
 /*  Flex Rows */
 /* Double col */
 .duo {
+  @include maxWidth(960px) {
+    @include flex();
+  }
   .col-1,
   .col-2 {
     height: 100%;
   }
 
   .col-cover {
+    filter: brightness(50%);
     height: 100%;
     object-fit: cover;
+
+    @include maxWidth(960px) {
+      display: none;
+    }
   }
 
   .col-2 {
     @include flex();
     justify-content: center;
     padding: 30px;
-    @include maxWidth(900px) {
-      padding: 40px 30px;
-    }
   }
 }
 
@@ -39,7 +44,7 @@
   text-align: center;
 
   div {
-    padding: $padding-div;
+    padding: 10px 20px;
     width: 33%;
 
     @include maxWidth(768px) {
@@ -68,6 +73,6 @@
   color: $color-light;
 }
 
-section {
+.section-padding {
   padding: $padding-section;
 }

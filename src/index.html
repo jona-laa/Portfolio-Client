@@ -32,8 +32,8 @@
         </ul>
       </nav>
       <div class="social">
-        <a href="https://github.com/jona-laa/" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/jonathan-laasonen-974aa617a/" target="_blank"><i
+        <a href="https://github.com/jona-laa/" target="_blank" class="icon-link"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/jonathan-laasonen-974aa617a/" target="_blank" class="icon-link"><i
             class="fab fa-linkedin fa-2x"></i></a>
       </div>
     </div>
@@ -77,7 +77,7 @@
 
     </section>
 
-    <!-- pitch-1 section -->
+    <!-- Skillset section -->
     <section id="skillset" class="bg-dark">
       <h2>Skillset</h2>
       <div class="row duo">
@@ -88,7 +88,7 @@
         <div class="col">
           <div class="col-2">
             <h3 class="centered-heading">Some of My Skills</h3>
-            <div class="skills">
+            <div class="skills-container">
               <div class="skill">
                 <i class="fab fa-js fa-3x"></i>
                 <span>JavaScript</span>
@@ -152,7 +152,7 @@
     </section>
 
 
-    <!-- Back-end -->
+    <!-- Resume -->
     <section id="resume" class="section-padding bg-light">
       <h2>Resume</h2>
       <div class="divider"></div>
@@ -198,7 +198,7 @@
       <div class="divider"></div>
 
       <h3 class="centered-heading">Studies</h3>
-      <div class="row trio work">
+      <div class="row trio studies">
         <div class="resume-item">
           <h4>Web development III</h4>
           <span>Mid Sweden University</span><br>
@@ -270,77 +270,85 @@
         </div>
 
       </div>
-
     </section>
+    <!-- Resume End -->
 
     <!-- Portfolio -->
     <section id="portfolio" class="section-padding bg-dark">
       <h2>Portfolio</h2>
       <div class="divider"></div>
 
-      <div class="row trio">
+      <div class="row trio portfolio-container">
         <div class="portfolio-item">
           <img src="./images/mockup_PBM2.jpg" alt="" />
-
         </div>
 
         <div class="portfolio-item">
           <img src="./images/mockup_KTLO.jpg" alt="" />
-
         </div>
 
         <div class="portfolio-item">
           <img src="./images/mockup_DB.jpg" alt="" />
-
         </div>
 
         <div class="portfolio-item">
           <img src="./images/mockup_getadit.jpg" alt="" />
-
         </div>
 
         <div class="portfolio-item">
           <img src="./images/mockup_astro.jpg" alt="" />
-
         </div>
-
       </div>
-
     </section>
+    <!-- Portfolio End -->
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section-padding">
       <h2>Get In Touch</h2>
       <div class="divider"></div>
 
-      <form class="contact-form">
+      <form class="contact-form" action=”mailto:jona.laa.dev@gmail.com” method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
         <div>
-          <label for="name"></label>
-          <input type="text" name="name" id="name" placeholder="Enter Name">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="First Name" required>
         </div>
         <div>
-          <label for="email"></label>
-          <input type="email" name="email" id="email" placeholder="Enter Email">
+          <label for="last-name">Last Name</label>
+          <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
         </div>
         <div>
-          <label for="phone"></label>
-          <input type="text" name="phone" id="phone" placeholder="Enter Phone">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email" required>
         </div>
-        <input type="submit" value="Send" id="submit" class="btn" onclick="sendClick(event)">
-      </form> <!-- form end -->
-    </section> <!-- contact section end -->
+        <div>
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <textarea id="message" placeholder="Message" required></textarea>
+        <input type="submit" value="Submit" id="submit" class="btn" onclick="sendClick(event)">
+      </form>
+
+      <!-- <div class="contact-icons">
+        <a href="mailto:jona.laa.dev@gmail.com" target="_blank" class="icon-link"><i class="fas fa-at fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/jonathan-laasonen-974aa617a/" target="_blank" class="icon-link"><i
+            class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://github.com/jona-laa/" target="_blank" class="icon-link"><i class="fab fa-github fa-2x"></i></a>
+      </div> -->
+
+    </section>
+    <!-- Contact End -->
   </main>
 
   <footer class="bg-dark">
-    <div class="social">
-      <a href="https://github.com/jona-laa/" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-      <a href="https://www.linkedin.com/in/jonathan-laasonen-974aa617a/" target="_blank"><i
-          class="fab fa-linkedin fa-2x"></i></a>
-    </div>
     <small>&copy; 2020 Jona.Laa.Dev </small>
 
     <!-- To Top Button -->
     <a href="#home" id="goTop" class="btn-top">
+      <!-- <div class="social">
+          <a href="https://github.com/jona-laa/" target="_blank" class="icon-link"><i class="fab fa-github fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/jonathan-laasonen-974aa617a/" target="_blank" class="icon-link"><i
+              class="fab fa-linkedin fa-2x"></i></a>
+        </div> -->
       <svg class="arrow up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="5 0 50 80" xml:space="preserve">
         <polyline fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" points="

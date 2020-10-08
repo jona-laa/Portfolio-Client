@@ -1,12 +1,22 @@
 #skillset h2 {
-    display: none;
+  display: none;
 }
 
-.skills {
-    @include flex(row, wrap);
-    justify-content: center;
-    max-width: 600px;
-    margin: 0 auto;
+#skillset .col-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url('../images/branko-stancevic-GI1hwOGqGtE-unsplash.jpg') no-repeat center
+      center/cover;
+}
+
+.skills-container {
+  @include flex(row, wrap);
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
 }
 
 .skill {
@@ -17,9 +27,5 @@
 }
 
 .skill span {
-    font-size: $font-M;
-}
-
-.col-cover {
-    filter: brightness(50%)
+  font-size: $font-M;
 }
