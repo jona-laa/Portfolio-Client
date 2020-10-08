@@ -45,23 +45,23 @@
 
     li {
       @include maxWidth(812px) {
-        // background-color: rgba(0, 0, 0, 0.3);
         display: block;
         line-height: 3.8rem;
         z-index: 11111;
       }
     }
   }
-}
 
-/* Mobile hamburger menu icon */
-#main-menu-toggle {
-  display: none;
+  /* Mobile hamburger menu icon */
+  #main-menu-toggle {
+    display: none;
 
-  @include maxWidth(812px) {
-    display: block;
-    position: absolute;
-    right: 15px;
-    top: 17px;
+    @include maxWidth(812px) {
+      display: block;
+      position: absolute;
+      right: 15px;
+      top: 17px;
+    }
   }
 }
+
