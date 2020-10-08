@@ -1,0 +1,10 @@
+#resume {
+    background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) ), url('../images/freddie-marriage-vSchPA-YA_A-unsplash.jpg') no-repeat center center/cover;
+}
+
+.resume-item {
+    span {
+        font-size: $font-S;
+        font-weight: lighter;
+    }
+}

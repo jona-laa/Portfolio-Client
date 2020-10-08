@@ -1,0 +1,14 @@
+/* Social media icons */
+.social a {
+  color: $color-light;
+  font-size: $font-L;
+  margin: 5px;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.skill i {
+  height: 30px;
+}

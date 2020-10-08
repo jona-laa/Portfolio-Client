@@ -1,0 +1,25 @@
+#skillset h2 {
+    display: none;
+}
+
+.skills {
+    @include flex(row, wrap);
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skill {
+  @include flex();
+  margin: 10px;
+  text-align: center;
+  width: 100px;
+}
+
+.skill span {
+    font-size: $font-M;
+}
+
+.col-cover {
+    filter: brightness(50%)
+}
