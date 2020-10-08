@@ -32,7 +32,7 @@ let prevScrollpos = window.pageYOffset;
 const hideMenu = () => {
   let currentScrollPos = window.pageYOffset;
 
-  if (screen.width < 813 && window.pageYOffset > 100) {
+  // if (screen.width < 813 && window.pageYOffset > 100) {
     if (prevScrollpos > currentScrollPos) {
       elementToggle(header, 'top', '0');
       elementDisplay(mainMenu, 'none');
@@ -40,7 +40,7 @@ const hideMenu = () => {
       elementToggle(header, 'top', '-80px');
       elementDisplay(mainMenu, 'none');
     }
-  }
+  // }
 
   // Give header tint if scroll down screen height
   window.pageYOffset > window.screen.height - 300 ? header.style.background = 'rgba(0, 0, 0, 0.5)' : header.style.background = 'transparent';
@@ -53,7 +53,7 @@ const hideMenu = () => {
 // Hide "to top button"
 const hideToTopBtn = () => {
   window.pageYOffset > window.screen.height ?
-    elementToggle(toTopBtn, 'bottom', '10px')
+    elementToggle(toTopBtn, 'bottom', '20px')
     :
     elementToggle(toTopBtn, 'bottom', '-50px')
 }

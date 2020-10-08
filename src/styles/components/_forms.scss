@@ -7,6 +7,12 @@
     url('../images/photo-1569396116180-210c182bedb8.jpeg') no-repeat center
       center/cover;
   padding: $padding-section;
+
+  .contact-icons {
+    margin: auto;
+    text-align: center;
+    width: 300px;
+  }
 }
 
 .contact-form {

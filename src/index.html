@@ -32,8 +32,8 @@
         </ul>
       </nav>
       <div class="social">
-        <a href="https://github.com/jona-laa/" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/jonathan-laasonen-974aa617a/" target="_blank"><i
+        <a href="https://github.com/jona-laa/" target="_blank" class="icon-link"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/jonathan-laasonen-974aa617a/" target="_blank" class="icon-link"><i
             class="fab fa-linkedin fa-2x"></i></a>
       </div>
     </div>
@@ -307,40 +307,48 @@
       <h2>Get In Touch</h2>
       <div class="divider"></div>
 
-      <form class="contact-form">
+      <form class="contact-form" action=”mailto:jona.laa.dev@gmail.com” method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
         <div>
           <label for="name">Name</label>
-          <input type="text" name="name" id="name" placeholder="First Name">
+          <input type="text" name="name" id="name" placeholder="First Name" required>
         </div>
         <div>
           <label for="last-name">Last Name</label>
-          <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+          <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
         </div>
         <div>
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Email">
+          <input type="email" name="email" id="email" placeholder="Email" required>
         </div>
         <div>
           <label for="subject">Subject</label>
-          <input type="text" name="subject" id="subject" placeholder="Subject">
+          <input type="text" name="subject" id="subject" placeholder="Subject" required>
         </div>
-        <textarea id="message" placeholder="Message"></textarea>
+        <textarea id="message" placeholder="Message" required></textarea>
         <input type="submit" value="Submit" id="submit" class="btn" onclick="sendClick(event)">
       </form>
+
+      <!-- <div class="contact-icons">
+        <a href="mailto:jona.laa.dev@gmail.com" target="_blank" class="icon-link"><i class="fas fa-at fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/jonathan-laasonen-974aa617a/" target="_blank" class="icon-link"><i
+            class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://github.com/jona-laa/" target="_blank" class="icon-link"><i class="fab fa-github fa-2x"></i></a>
+      </div> -->
+
     </section>
     <!-- Contact End -->
   </main>
 
   <footer class="bg-dark">
-    <div class="social">
-      <a href="https://github.com/jona-laa/" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-      <a href="https://www.linkedin.com/in/jonathan-laasonen-974aa617a/" target="_blank"><i
-          class="fab fa-linkedin fa-2x"></i></a>
-    </div>
     <small>&copy; 2020 Jona.Laa.Dev </small>
 
     <!-- To Top Button -->
     <a href="#home" id="goTop" class="btn-top">
+      <!-- <div class="social">
+          <a href="https://github.com/jona-laa/" target="_blank" class="icon-link"><i class="fab fa-github fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/jonathan-laasonen-974aa617a/" target="_blank" class="icon-link"><i
+              class="fab fa-linkedin fa-2x"></i></a>
+        </div> -->
       <svg class="arrow up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="5 0 50 80" xml:space="preserve">
         <polyline fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" points="
