@@ -1,6 +1,8 @@
 .header-content {
   @include flex(row);
   align-items: center;
+  // background-color: rgba(0, 0, 0, 0.1);
+
   height: 80px;
   justify-content: center;
   padding: 0 30px;
@@ -12,6 +14,10 @@
   .social {
     position: absolute;
     right: 20px;
+
+    @include maxWidth(812px) {
+      left: 20px;
+    }
   }
 
   @include maxWidth(900px) {

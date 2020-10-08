@@ -6,7 +6,7 @@ const mainMenu = document.querySelector('#menu-main-menu');
 
 // Hide header & to top on scroll
 window.onscroll = () => {
-  hasScrolled();
+  hideMenu();
   hideToTopBtn();
 };
 
@@ -29,19 +29,25 @@ const elementDisplay = (element, value) => element.style.display = value;
 // Hide Header
 let prevScrollpos = window.pageYOffset;
 
-const hasScrolled = () => {
+const hideMenu = () => {
   let currentScrollPos = window.pageYOffset;
 
-  if (prevScrollpos > currentScrollPos) {
-    elementToggle(header, 'top', '0');
-    elementDisplay(mainMenu, 'none');
-  } else {
-    elementToggle(header, 'top', '-80px');
-    elementDisplay(mainMenu, 'none');
+  if (screen.width < 813 && window.pageYOffset > 100) {
+    if (prevScrollpos > currentScrollPos) {
+      elementToggle(header, 'top', '0');
+      elementDisplay(mainMenu, 'none');
+    } else {
+      elementToggle(header, 'top', '-80px');
+      elementDisplay(mainMenu, 'none');
+    }
   }
+
+  // Give header tint if scroll down screen height
+  window.pageYOffset > window.screen.height - 300 ? header.style.background = 'rgba(0, 0, 0, 0.5)' : header.style.background = 'transparent';
 
   prevScrollpos = currentScrollPos;
 }
+
 
 
 // Hide "to top button"

@@ -11,7 +11,7 @@ $('#menu-main-menu a, .btn, .arrow-link').on('click', function (e) {
 
     const hash = this.hash;
     $('html, body').animate({
-      scrollTop: $(hash).offset().top - 150,
+      scrollTop: $(hash).offset().top,
     },
       800
     );
