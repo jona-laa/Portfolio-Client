@@ -23,7 +23,6 @@ h2 {
   font-size: $font-h2;
   font-family: 'poppins', 'sans-serif';
   font-weight: bold;
-  padding: 25px 0 7.5px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -50,6 +49,6 @@ p {
 /* Line under headings */
 .divider {
   border: 1px solid #cecbcb;
-  margin: 0 auto 10px;
+  margin: 5px auto 25px;
   width: 120px;
 }
