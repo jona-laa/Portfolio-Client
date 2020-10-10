@@ -7,7 +7,7 @@ const
   portfolioContainer = document.querySelector('.portfolio-container');
 
 // API URLs
-const aboutUrl = 'http://localhost:8080/portfolio/api/bio';
+const aboutUrl = 'http://localhost:8080/portfolio/api/bio?published=true';
 const skillsUrl = 'http://localhost:8080/portfolio/api/skills';
 const workUrl = 'http://localhost:8080/portfolio/api/jobs';
 const studiesUrl = 'http://localhost:8080/portfolio/api/courses';
@@ -32,17 +32,17 @@ const getData = (url, createElement) => {
   * @param        {object}        fetchData       fetchData.bios[0].id/heading/bio/img_src
 */
 const createBio = (fetchData) => {
-  const bioObj = fetchData.bios[0];
+  const bio = fetchData.bios[0];
 
   aboutContainer.innerHTML += `
     <div class="avatar-container">
-      <div class="avatar" style="background: url('${bioObj.img_src}') no-repeat center center/cover"></div>
+      <div class="avatar" style="background: url('${bio.img_src}') no-repeat center center/cover"></div>
     </div>
 
     <div>
           <div>
-            <h3>${bioObj.heading}</h3>
-            <p>${bioObj.bio}</p>
+            <h3>${bio.heading}</h3>
+            <p>${bio.bio}</p>
           </div>
         </div>
   `
