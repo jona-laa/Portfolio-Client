@@ -19,7 +19,7 @@ const portfolioUrl = 'http://localhost:8080/portfolio/api/projects';
 /* Gets data and call create appropriate element
   * @param        {string}        url       API-url
 */
-const getData = (url, createElement) => {
+const fetchAndCreate = (url, createElement) => {
   fetch(url)
     .then(res => res.json())
     .then(data => createElement(data))
@@ -126,9 +126,9 @@ const createPortfolio = (fetchData) => {
 
 
 window.addEventListener("load",
-  getData(aboutUrl, createBio),
-  getData(skillsUrl, createSkills),
-  getData(workUrl, createWork),
-  getData(studiesUrl, createStudies),
-  getData(portfolioUrl, createPortfolio)
+  fetchAndCreate(aboutUrl, createBio),
+  fetchAndCreate(skillsUrl, createSkills),
+  fetchAndCreate(workUrl, createWork),
+  fetchAndCreate(studiesUrl, createStudies),
+  fetchAndCreate(portfolioUrl, createPortfolio)
 );
