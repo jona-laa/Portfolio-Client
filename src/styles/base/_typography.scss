@@ -3,6 +3,7 @@ main a {
   color: $color-dark;
 
   &:hover {
+    cursor: pointer;
     opacity: 0.75;
   }
 

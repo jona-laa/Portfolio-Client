@@ -32,7 +32,7 @@ const hideToTopBtn = () => {
 
 
 //Smooth scrolling
-$('#menu-main-menu a, .btn, .arrow-link').on('click', function (e) {
+$('#menu-main-menu a, .btn-top, .arrow-link').on('click', function (e) {
   if (this.hash !== '') {
     e.preventDefault();
 
