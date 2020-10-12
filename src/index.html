@@ -55,7 +55,7 @@
       <div class="divider"></div>
 
       <div class="about-container">
-        <div class="avatar-container">
+        <!-- <div class="avatar-container">
           <div class="avatar"></div>
         </div>
 
@@ -72,7 +72,7 @@
               based in Stockholm, Sweden. Ut enim ad minim veniam, quis nostrud exercitation
               ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
           </div>
-        </div>
+        </div> -->
       </div>
 
     </section>
@@ -89,7 +89,7 @@
           <div class="col-2">
             <h3 class="centered-heading">Some of My Skills</h3>
             <div class="skills-container">
-              <div class="skill">
+              <!-- <div class="skill">
                 <i class="fab fa-js fa-3x"></i>
                 <span>JavaScript</span>
               </div>
@@ -144,7 +144,7 @@
               <div class="skill">
                 <i class="fas fa-database fa-3x"></i>
                 <span>MySQL</span>
-              </div>
+              </div> -->
             </div>
           </div>
         </div> <!-- col end  -->
@@ -159,7 +159,7 @@
 
       <h3 class="centered-heading">Work</h3>
       <div class="row trio work">
-        <div class="resume-item">
+        <!-- <div class="resume-item">
           <h4>SALT</h4>
           <span>Software Developer</span><br>
           <span>19-09-01 – 20-04-30</span>
@@ -192,14 +192,14 @@
           <span>Salesman</span><br>
           <span>17-04-01 – 18-04-20</span>
           <p>Sales and Customer Service.</p>
-        </div>
+        </div> -->
       </div>
 
       <div class="divider"></div>
 
       <h3 class="centered-heading">Studies</h3>
       <div class="row trio studies">
-        <div class="resume-item">
+        <!-- <div class="resume-item">
           <h4>Web development III</h4>
           <span>Mid Sweden University</span><br>
           <span>20.09.01 – </span>
@@ -267,7 +267,7 @@
           <span>Mid Sweden University</span><br>
           <span>18.09.01 – 18.10.30</span>
           <p>PHP / Relational Databases(MySQL/MariaDB)</p>
-        </div>
+        </div> -->
 
       </div>
     </section>
@@ -279,25 +279,7 @@
       <div class="divider"></div>
 
       <div class="row trio portfolio-container">
-        <div class="portfolio-item">
-          <img src="./images/mockup_PBM2.jpg" alt="" />
-        </div>
 
-        <div class="portfolio-item">
-          <img src="./images/mockup_KTLO.jpg" alt="" />
-        </div>
-
-        <div class="portfolio-item">
-          <img src="./images/mockup_DB.jpg" alt="" />
-        </div>
-
-        <div class="portfolio-item">
-          <img src="./images/mockup_getadit.jpg" alt="" />
-        </div>
-
-        <div class="portfolio-item">
-          <img src="./images/mockup_astro.jpg" alt="" />
-        </div>
       </div>
     </section>
     <!-- Portfolio End -->
@@ -325,7 +307,7 @@
           <input type="text" name="subject" id="subject" placeholder="Subject" required>
         </div>
         <textarea id="message" placeholder="Message" required></textarea>
-        <input type="submit" value="Submit" id="submit" class="btn" onclick="sendClick(event)">
+        <input type="submit" value="Submit" id="submit" class="btn" onclick="event.preventDefault()">
       </form>
 
       <!-- <div class="contact-icons">
