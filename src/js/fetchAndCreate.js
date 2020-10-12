@@ -113,11 +113,17 @@ const createStudies = (fetchData) => {
 */
 const createPortfolio = (fetchData) => {
   const projects = fetchData.projects;
+  console.log(projects)
 
   projects.forEach(project => {
     portfolioContainer.innerHTML += `
-      <div class="portfolio-item">
-        <img src="${project.img_src}" alt="" />
+      <div class="portfolio-item" style="background: url(${project.img_src}) no-repeat center center/cover">
+        <div class="portfolio-item_overlay">
+          <div class="portfolio-item_content">
+            <h3><a href="${project.prj_url}" target="_blank">${project.title}</a></h3>
+            <p>${project.descr}</p>
+          </div>
+        </div>
       </div>
     `
   });
