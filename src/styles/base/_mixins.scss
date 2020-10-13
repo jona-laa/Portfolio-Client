@@ -17,13 +17,3 @@
   flex-direction: $dir;
   flex-wrap: $wrap;
 }
-
-@mixin light-theme($light) {
-  @if $light {
-    background-color: $bg-light;
-    color: $color-dark;
-  } @else {
-    background-color: $bg-dark;
-    color: $color-light;
-  }
-}

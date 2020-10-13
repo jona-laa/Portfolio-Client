@@ -6,13 +6,19 @@ const
   studiesContainer = document.querySelector('.studies'),
   portfolioContainer = document.querySelector('.portfolio-container');
 
-// API URLs
+// API URLs Dev
 const aboutUrl = 'http://localhost:8080/portfolio/api/bio?published=true';
 const skillsUrl = 'http://localhost:8080/portfolio/api/skills';
 const workUrl = 'http://localhost:8080/portfolio/api/jobs';
 const studiesUrl = 'http://localhost:8080/portfolio/api/courses';
 const portfolioUrl = 'http://localhost:8080/portfolio/api/projects';
 
+// API URLs Remote
+// const aboutUrl = 'http://studenter.miun.se/~jola1803/dt173g/portfolio/api/bio.php?published=true';
+// const skillsUrl = 'http://studenter.miun.se/~jola1803/dt173g/portfolio/api/skills.php';
+// const workUrl = 'http://studenter.miun.se/~jola1803/dt173g/portfolio/api/jobs.php';
+// const studiesUrl = 'http://studenter.miun.se/~jola1803/dt173g/portfolio/api/courses.php';
+// const portfolioUrl = 'http://studenter.miun.se/~jola1803/dt173g/portfolio/api/projects.php';
 
 
 /********** GET **********/
@@ -113,7 +119,6 @@ const createStudies = (fetchData) => {
 */
 const createPortfolio = (fetchData) => {
   const projects = fetchData.projects;
-  console.log(projects)
 
   projects.forEach(project => {
     portfolioContainer.innerHTML += `

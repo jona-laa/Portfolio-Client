@@ -11,8 +11,7 @@
   }
 }
 
-/*  Flex Rows */
-/* Double col */
+/* Flex container with Double Columns */
 .duo {
   @include maxWidth(960px) {
     @include flex();
@@ -39,7 +38,7 @@
   }
 }
 
-/* Triple col */
+/* Flex container with Triple col */
 .trio {
   text-align: center;
 
