@@ -25,7 +25,7 @@
       text-align: center;
 
       @include maxWidth(650px) {
-        font-size: $font-h1;
+        font-size: 5.5rem;
       }
 
       @include maxWidth(520px) {
@@ -42,14 +42,14 @@
     }
 
     .tagline {
-      font-size: $font-XXXXL;
+      font-size: 4.2rem;
       left: 125px;
       margin: -10px 0 0;
       position: relative;
       text-align: center;
 
       @include maxWidth(650px) {
-        font-size: $font-XXXL;
+        font-size: 3rem;
         left: 110px;
         margin: -15px 0 0;
       }

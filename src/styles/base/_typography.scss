@@ -1,31 +1,14 @@
-/* Font sizing */
-// $font-XS: 1.2rem;
-// $font-S: 1.4rem;
-// $font-M: 1.6rem;
-// $font-L: 1.8rem;
-// $font-XL: 2rem;
-// $font-XXL: 2.2rem;
-// $font-XXXL: 3rem;
-// $font-XXXXL: 4.2rem;
-// $font-h1: 5.5rem;
-// $font-h2: 4rem;
-
-main a {
+a {
   text-decoration: none;
-  color: $color-dark;
 
   &:hover {
     cursor: pointer;
-    opacity: 0.75;
-  }
-
-  &:visited {
-    color: $color-dark;
+    color: darken($color-light, 30%) !important;
   }
 }
 
 h1 {
-  font-size: $font-h1;
+  font-size: 5.5rem;
   font-weight: 300;
   line-height: 5.8rem;
 }
@@ -33,7 +16,7 @@ h1 {
 h2 {
   font-weight: 400;
   line-height: 4.2rem;
-  font-size: $font-h2;
+  font-size: 4rem;
   font-family: 'poppins', 'sans-serif';
   font-weight: bold;
   text-align: center;
@@ -46,7 +29,7 @@ h3 {
 }
 
 h4 {
-  font-size: $font-L;
+  font-size: 1.8rem;
 }
 
 p {

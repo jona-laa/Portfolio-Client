@@ -2,8 +2,8 @@
 .main-menu {
   @include maxWidth(812px) {
     text-align: right;
-    z-index: 100;
     width: 100%;
+    z-index: 100;
   }
 
   ul {
@@ -27,14 +27,13 @@
     .menu-link {
       color: $color-light;
       font-family: 'poppins', 'sans-serif';
-      font-size: $font-L;
+      font-size: 1.8rem;
       padding: 0px 20px;
       margin: 0 5px;
       text-decoration: none;
       text-transform: uppercase;
 
       &:hover {
-        color: darken($color-light, 30%) !important;
         border-bottom: $color-light 1px solid;
       }
 
