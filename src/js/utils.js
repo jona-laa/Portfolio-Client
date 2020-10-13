@@ -31,6 +31,18 @@ const hideToTopBtn = () => {
 
 
 
+/* Changes background color of elements depending on window.pageYOffset - Used onscroll
+ * @param   {number}    offset     Negative offset on window.screen.height
+ * @param   {string}    col1       Color if scrolled > (screen height - offset)
+ * @param   {string}    col2       Color if scrolled < (screen height - offset)
+ * @param   {DOM Eleme} elements   Element/elements to alter
+*/
+const alterBgColor = (offset, col1, col2, ...elements) => {
+  elements.forEach(element => window.pageYOffset > window.screen.height - offset ? element.style.background = col1 : element.style.background = col2);
+}
+
+
+
 //Smooth scrolling
 $('#menu-main-menu a, .btn-top, .arrow-link').on('click', function (e) {
   if (this.hash !== '') {

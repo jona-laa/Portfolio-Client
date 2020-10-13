@@ -119,7 +119,6 @@ const createStudies = (fetchData) => {
 */
 const createPortfolio = (fetchData) => {
   const projects = fetchData.projects;
-  console.log(projects)
 
   projects.forEach(project => {
     portfolioContainer.innerHTML += `
