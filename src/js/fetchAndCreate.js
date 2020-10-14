@@ -132,6 +132,10 @@ const createPortfolio = (fetchData) => {
       </div>
     `
   });
+
+  if (isIos()) {
+    document.querySelectorAll('.portfolio-item_overlay').forEach(e => elementDisplay(e, 'block'));
+  }
 };
 
 

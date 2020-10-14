@@ -13,6 +13,7 @@ const mainMenu = document.querySelector('#menu-main-menu');
 const elementToggle = (element, position, offset) => position === 'top' ? element.style.top = offset : element.style.bottom = offset;
 
 
+
 /* Change display attribute of element
  * @param   {DOM element}   element     Target DOM element
  * @param   {string}        value       Display attribute value, e.g. 'none', 'block', etc.
@@ -22,12 +23,7 @@ const elementDisplay = (element, value) => element.style.display = value;
 
 
 // Hide "to top button"
-const hideToTopBtn = () => {
-  window.pageYOffset > window.screen.height ?
-    elementToggle(toTopBtn, 'bottom', '20px')
-    :
-    elementToggle(toTopBtn, 'bottom', '-50px')
-}
+const hideToTopBtn = () => window.pageYOffset > window.screen.height ? elementToggle(toTopBtn, 'bottom', '20px') : elementToggle(toTopBtn, 'bottom', '-50px');
 
 
 
@@ -37,9 +33,14 @@ const hideToTopBtn = () => {
  * @param   {string}    col2       Color if scrolled < (screen height - offset)
  * @param   {DOM Eleme} elements   Element/elements to alter
 */
-const alterBgColor = (offset, col1, col2, ...elements) => {
-  elements.forEach(element => window.pageYOffset > window.screen.height - offset ? element.style.background = col1 : element.style.background = col2);
-}
+const alterBgColor = (offset, col1, col2, ...elements) => elements.forEach(element => window.pageYOffset > window.screen.height - offset ? element.style.background = col1 : element.style.background = col2);
+
+
+
+/* If iOs device or no
+  * @returns {boolean}
+*/
+const isIos = () => /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 
 

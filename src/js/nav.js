@@ -14,13 +14,14 @@ let prevScrollpos = window.pageYOffset;
 const hideMenu = () => {
   let currentScrollPos = window.pageYOffset;
 
-  // if (screen.width < 813 && window.pageYOffset > 100) {
-  if (prevScrollpos > currentScrollPos) {
-    elementToggle(header, 'top', '0');
-    elementDisplay(mainMenu, 'none');
-  } else {
-    elementToggle(header, 'top', '-80px');
-    elementDisplay(mainMenu, 'none');
+  if (window.pageYOffset > 100) {
+    if (prevScrollpos > currentScrollPos) {
+      elementToggle(header, 'top', '0');
+      elementDisplay(mainMenu, 'none');
+    } else {
+      elementToggle(header, 'top', '-80px');
+      elementDisplay(mainMenu, 'none');
+    }
   }
 
   prevScrollpos = currentScrollPos;
