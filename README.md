@@ -14,6 +14,6 @@ Data is fetched from a REST API that I've build in PHP. Check out repo [here](ht
 * `npm i`
 * `gulp`
   
-Note that code is set up to function with this specific [REST API](https://github.com/jona-laa/Portfolio-Server), so you would probably have to clone that one too and adjust it to fit your purpose.
+Note that code is set up to function with this specific [REST API](https://github.com/jona-laa/Portfolio-Server), so you would probably have to clone that one too and adjust it to fit your purpose and also create a database to use with it.
   
 :v:
