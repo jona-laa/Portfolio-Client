@@ -17,6 +17,10 @@
       display: block;
     }
 
+    &:focus > div {
+      display: block;
+    }
+
     // Covers portfolio item on :hover
     .portfolio-item_overlay {
       display: none;

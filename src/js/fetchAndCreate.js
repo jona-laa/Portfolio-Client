@@ -136,6 +136,7 @@ const createPortfolio = (fetchData) => {
   if (isIos()) {
     document.querySelectorAll('.portfolio-item_overlay').forEach(e => elementDisplay(e, 'block'));
   }
+
 };
 
 
